@@ -1,14 +1,16 @@
 :root{
  --bg-color-header: rgb(73, 126, 207);
  --bg-color-main: rgba(87, 80, 80, 0.74);
- --bg-color-footer: rgb(45, 45, 201);
+ --bg-color-footer: rgb(152, 152, 223);
 }
 
 body{
     box-sizing: border-box;
     padding: 0;
     margin: 0%;
+    min-height: 100vh;
     display: grid;
+    overflow: hidden;
     grid-template-columns: repeat(3,1fr);
     grid-template-areas:"header header header" 
                         "main    main    main"
@@ -29,6 +31,10 @@ main{
 footer{
     grid-area: footer;
     background-color: var(--bg-color-footer);
+    display: flex;
+    flex: 1;
+    align-items: end;
+
 }
 
 
